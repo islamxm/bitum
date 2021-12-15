@@ -1,0 +1,31 @@
+.aside {
+	width: 25%;
+	background-color: var(--light_blue);
+	height: 100%;
+	// width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	padding: 0 15px;
+	padding-top: 40px;
+
+	&__in {}
+
+	&__item {
+		display: block;
+		color: #fff;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 30px;
+		margin-bottom: 20%;
+		@include ease-03;
+		padding-bottom: 8px;
+		border-bottom: 5px solid #000;
+
+		&:hover {
+			color: #ccc;
+			border-color: red;
+		}
+	}
+}

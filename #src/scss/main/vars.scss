@@ -1,0 +1,9 @@
+:root {
+	--dark_blue: #003573;
+	--light_blue: #0075FE;
+
+}
+
+@mixin ease-03 {
+	transition: all .3s ease;
+}

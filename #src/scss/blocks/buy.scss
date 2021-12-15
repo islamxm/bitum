@@ -1,0 +1,207 @@
+.buy {
+	margin-bottom: 136px;
+	&__blue {
+		background-color: var(--light_blue);
+		padding: 75px 20px;
+		width: 100%;
+		
+		margin-bottom: 50px;
+		
+
+		&_inner {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			position: relative;
+
+		}
+
+		&_title {
+			margin-bottom: 50px;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 90px;
+			line-height: 122px;
+			color: #fff;
+		}
+
+		&_sub {
+			text-align: center;
+			color: #fff;
+			font-size: 55px;
+			line-height: 100px;
+		}
+
+		&_img {
+			position: absolute;
+			bottom: -660px;
+			left: -500px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+		}
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 600px;
+		position: relative;
+		z-index: 2;
+
+		button {
+			border-radius: 50px;
+			background-color: #E5E5E5;
+			font-size: 48px;
+			line-height: 48px;
+			padding: 20px 150px;
+			font-weight: 600;
+			@include ease-03;
+
+			&:hover {
+				background-color: var(--dark_blue);
+				color: #fff;
+			}
+		}
+	}
+
+	&__descr {
+		font-size: 48px;
+		line-height: 60px;
+		font-weight: 600;
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 1920px) {
+
+	.buy {
+
+
+		&__blue {
+
+			&_inner {
+
+
+
+			}
+
+			&_img {
+				left: -250px;
+				bottom: -690px;
+			}
+
+
+		}
+
+		&__btn {
+			margin-bottom: 455px;
+		}
+	}
+}
+
+
+@media (max-width: 1366px) {
+
+	.buy {
+
+
+		&__blue {
+			padding: 50px 0;
+			&_title {	
+				font-size: 40px;
+				line-height: 50px;
+			}
+
+			&_sub {
+				font-size: 25px;
+				line-height: 35px;
+			}
+
+			&_img {
+				height: 300px;
+				width: 300px;
+				left: 0;
+				bottom: -70px;
+
+			}
+		}
+
+		&__btn {
+			margin-bottom: 40px;
+			button {
+				font-size: 25px;
+				line-height: 35px;
+
+			}
+		}
+
+		&__descr {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+}
+
+@media (max-width: 1070px) {
+	.buy {
+
+		&__blue {
+			
+			&_img {
+				// position: static;
+				display: none;
+				width: 500px;
+				height: 500px;
+				
+			}
+		}
+
+		&__descr {
+			font-size: 25px;
+			line-height: 30px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+
+	.buy {
+		margin-bottom: 50px;
+		&__blue {
+
+			&_title {
+				font-size: 25px;
+				line-height: 30px;
+				margin-bottom: 20px;
+				font-weight: 700;
+			}
+
+			&_sub {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+
+		&__btn {
+			padding: 0 10px;
+			button {
+				padding: 20px 10px;
+				text-align: center;
+				font-size: 18px;
+			line-height: 20px;
+			width: 100%;
+			}
+		}
+
+		&__descr {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+}
+
