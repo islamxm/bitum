@@ -1,0 +1,170 @@
+.vykup	{
+	width: 100%;
+	padding: 10px 70px;
+	display: flex;
+	justify-content: space-between;
+
+	&__descr {
+		width: 50%;
+		&_text {
+			font-size: 25px;
+			line-height: 35px;
+			font-weight: 500;
+			margin-bottom: 50px;
+		}
+
+		&_form {
+
+			.form__body {
+				display: flex;
+				align-items: center;
+				margin-bottom: 50px;
+
+				&_img {	
+					width: 140px;
+					height: 140px;
+					background-color: #ccc;
+					margin-right: 27px;
+				}
+
+				&_cust {
+
+					input {
+						border: 4px solid #000;
+						border-radius: 20px;
+						width: 150px;
+					}
+					.name {
+						font-size: 30px;
+						line-height: 35px;
+						margin-bottom: 5px;
+					}
+					.buy {
+						font-size: 30px;
+						line-height: 35px;
+						margin: 0;
+						margin-bottom: 5px;
+					}
+					.date {
+						font-size: 30px;
+						line-height: 35px;
+						margin-bottom: 5px;
+
+					}
+					.profit {
+						font-size: 30px;
+						line-height: 35px;
+
+						input	{
+							width: 150px;
+						}
+					}
+				}
+			}
+
+			.form__btn {
+				padding: 20px 100px;
+				border-radius: 25px;
+				background-color: var(--dark_blue);
+				color: #fff;
+				font-size: 30px;
+				line-height: 35px;
+				@include ease-03;
+
+				&:hover {
+					background-color: var(--light_blue);
+				}
+			}
+		}
+	}
+
+	&__charts {
+		&_item {
+			width: 600px;
+			display: flex;
+
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+@media (max-width: 1710px) {
+
+	.vykup {
+		flex-direction: column;
+
+		&__descr {
+			margin-bottom: 80px;
+			width: 100%;
+		}
+
+		&__charts {
+
+			&_item {
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1275px) {
+	.vykup {
+
+		padding-left: 130px;
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 700px) {
+
+	.vykup {
+
+		&__descr {
+
+
+			&_form {
+
+				.form__body {
+					flex-direction: column;
+					&_img {
+						width: 100%;
+						margin-bottom: 20px;
+						margin-right: 0;
+					}
+					&_cust {
+						width: 100%;
+						.name {
+							font-size: 25px;
+							line-height: 30px;
+						}
+
+						.buy {
+							font-size: 24px;
+							line-height: 30px;
+						}
+						.profit {
+							font-size: 24px;
+							line-height: 30px;
+						}
+						.date {
+							font-size: 25px;
+							line-height: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.vykup {
+		padding-left: 70px;
+	}
+}

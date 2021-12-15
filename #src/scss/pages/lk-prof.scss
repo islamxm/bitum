@@ -1,0 +1,39 @@
+.profile {
+
+	&__item {
+		font-size: 25px;
+		line-height: 35px;
+		&_img {
+			width: 246px;
+			background-color: #ccc;
+			border-radius: 100%;
+			height: 246px;
+			border: 4px solid var(--light_blue);
+			overflow: hidden;
+			margin-bottom: 40px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+
+	}
+}
+
+@media (max-width: 1275px) {
+
+	.profile {
+
+		padding-left: 130px;
+	}
+}
+
+@media (max-width: 500px) {
+
+	.profile {
+		padding-left: 70px;
+	}
+}

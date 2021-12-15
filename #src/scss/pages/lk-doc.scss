@@ -1,0 +1,209 @@
+.doc {
+
+	&__top {
+		margin-bottom: 70px;
+		&_item {
+			display: flex;
+			.img {
+				margin-right: 20px;
+				width: 140px;
+				height: 140px;
+				background-color: #ccc;
+
+			}
+
+			.descr {
+				font-size: 30px;
+				line-height: 40px;
+				font-weight: 500;
+
+				.name {
+					font-weight: 500;
+				}
+
+				.btn {
+					font-weight: 500;
+					display: block;
+
+					margin-bottom: 20px;
+					@include ease-03;
+
+					&:hover {
+						color: var(--light_blue);
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+	&__main {
+
+		.table {
+			width: 100%;
+			border-spacing: 0;
+			&_head {
+				background-color: var(--light_blue);
+				color: #fff;
+
+				th {
+					text-align: left;
+					padding: 18px 5px;
+				}
+			}
+
+			td {
+				padding: 18px 5px;
+				font-size: 30px;
+				vertical-align: top;
+							line-height: 40px;
+							font-weight: 500;
+				
+					.t__item {
+						display: flex;
+						.img {
+							margin-right: 10px;
+							width: 140px !important;
+							height: 140px !important;
+							background-color: #ccc;
+						}
+
+						.descr {
+							font-size: 30px;
+							line-height: 40px;
+							font-weight: 500;
+							.btn {
+								font-weight: 500;
+								display: block;
+								margin-bottom: 20px;
+
+								@include ease-03;
+
+					&:hover {
+						color: var(--light_blue);
+						text-decoration: underline;
+					}
+							}
+						}
+					}
+				
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1750px) {
+
+	.doc {
+
+		&__top {
+
+			&_item {
+
+				.descr {
+					font-size: 20px;
+							line-height: 25px;
+				}
+			}
+		}
+
+		&__main {
+
+			.table {
+
+				&_head {
+					font-size: 20px;
+					line-height: 25px;
+				}
+
+				tr {
+					td {
+						font-size: 20px !important;
+						line-height: 25px !important;
+					}
+
+					.t__item {
+
+						.descr {
+							font-size: 20px;
+							line-height: 25px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1275px) {
+
+	.doc {
+		padding-left: 130px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.doc {
+		&__top {
+			&_item {
+				flex-direction: column;
+
+				.img {
+					width: 100%;
+					max-width: 300px;
+					margin-right: 0;
+					margin-bottom: 5px;
+				}
+			}
+		}
+		&__main {
+
+			.table {
+
+				tr {
+					.t__item {
+						flex-direction: column;
+
+						.img {
+							margin-right: 0;
+							margin-bottom: 5px;
+							width: 100% !important;
+							max-width: 300px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+
+	.doc {
+
+		padding-left: 60px;
+
+
+
+		&__main {
+
+			.table {
+
+				tr {
+					display: block;
+
+					td {
+						display: flex;
+						justify-content: space-between;
+					}
+				}
+				&_head {
+					display: none !important;
+					font-size: 16px;
+					line-height: 18px;
+				}
+			}
+		}
+	}
+}

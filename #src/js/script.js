@@ -33,9 +33,21 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }
     }
 
+    function asideMenu() {
+        const asideBtn = document.querySelector('.aside__btn');
+        const aside = document.querySelector('.aside');
+        const asideMenu = document.querySelector('.aside__in');
+
+        if(asideBtn) {
+            asideBtn.addEventListener('click', () => {
+                aside.classList.toggle('active');
+            })
+        }
+    }
+
 
     burgerMenu();
-
+    asideMenu();
 
 
     /*Chart*/

@@ -1,0 +1,118 @@
+.contract {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 70px;
+
+	&__btn {
+		padding: 20px 50px;
+		
+		border-radius: 20px;
+		color: #fff;
+		font-size: 25px;
+		line-height: 30px;
+		text-align: center;
+		background-color: var(--dark_blue);
+		margin-bottom: 30px;
+		@include ease-03;
+
+		&:hover {
+			background-color: var(--light_blue);
+		}
+	}
+	&__list {
+
+		&_item {
+			display: flex;
+			margin-bottom: 30px;
+
+			&_img {
+				width: 140px;
+				height: 140px;
+				background: #ccc;
+				margin-right: 27px;
+			}
+
+			&_descr {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				font-size: 24px;
+				line-height: 30px;
+				.name {
+
+				}
+			}
+		}
+	}
+
+	&__charts {
+
+		&_item {
+			width:800px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1760px) {
+
+	.contract {
+
+		flex-direction: column;
+	}
+}
+
+
+@media (max-width: 1275px) {
+
+	.contract {
+		padding-left: 130px;
+		&__charts {
+
+			&_item {
+
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 600px) {
+
+	.contract {
+		padding-right: 0;
+
+		&__btn {
+			width: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		&__list {
+
+			&_item {
+				flex-direction: column;
+
+				&_img {
+					margin: 0;
+					margin-bottom: 10px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.contract {
+		padding-left: 70px;
+	}
+}
+

@@ -6,9 +6,27 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 	height: 100vh;
 	padding: 0 15px;
 	padding-top: 40px;
+
+	&__btn {
+		display: block;
+		position: absolute;
+		top: 40px;
+		left: 30px;
+		display: none;
+		width: 70px;
+		span {
+			display: block;
+			height: 6px;
+			width: 70px;
+			border-radius: 20px;
+			background-color: #fff;
+			margin-bottom: 5px;
+		}
+	}
 
 	&__in {}
 
@@ -29,3 +47,72 @@
 		}
 	}
 }
+
+
+@media (max-width: 2000px) {
+	.aside {
+		width: 30%;
+		min-width: 400px;
+	}
+}
+
+@media (max-width: 1800px) {
+	.aside {
+		min-width: 300px;
+		padding: 0 10px;
+		padding-top: 30px;
+
+		&__item {
+
+		}
+	}
+}
+
+@media (max-width: 1275px) {
+	.aside.active {
+		width: 100%;
+		.aside__in {
+			display: block;
+		}
+	}
+	.aside {
+		width: 130px;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 1000;
+		@include ease-03;
+		min-width: unset;
+		&__btn {
+			display: block;
+		}
+		&__in {
+			display: none;
+		}
+
+		&__item {
+			white-space: nowrap;
+		}
+	}
+}
+
+@media(max-width: 500px) {
+
+	.aside {
+		width: 60px;
+		padding: 0 5px;
+		justify-content: flex-start;
+		flex-direction: column;
+		padding-top: 20px;
+
+		&__btn {
+			width: 100%;
+			position: static;
+
+			span {
+				max-width: 45px;
+			}
+		}
+	}
+}
+

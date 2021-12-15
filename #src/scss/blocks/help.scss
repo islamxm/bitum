@@ -1,0 +1,27 @@
+.help {
+	position: fixed;
+	display: inline-block;
+	padding: 20px;
+	bottom: 46px;
+	right: 70px;
+	width: 106;
+	border-radius: 100%;
+	justify-self: 106px;
+	background-color: var(--dark_blue);
+	cursor: pointer;
+
+	@include ease-03;
+
+	&:hover {
+		background-color: var(--light_blue);
+	}
+
+	&__in {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
