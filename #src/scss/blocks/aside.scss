@@ -5,11 +5,14 @@
 	// width: 500px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	flex-direction: column;
 	position: relative;
 	height: 100vh;
 	padding: 0 15px;
 	padding-top: 40px;
+	padding-bottom: 40px;
+	
 
 	&__btn {
 		display: block;
@@ -26,6 +29,10 @@
 			background-color: #fff;
 			margin-bottom: 5px;
 		}
+	}
+
+	&__prof {
+		display: block;
 	}
 
 	&__in {}
