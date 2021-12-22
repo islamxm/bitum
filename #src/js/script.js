@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
     MicroModal.init();
-    
     function burgerMenu() {
         const burgerBtn = document.querySelector('.header__burger');
         const burgerMenu = document.querySelector('.menu');
@@ -61,12 +60,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
           type: "area"
         },
         dataLabels: {
-          enabled: false
+          enabled: false,
+          
         },
         series: [
           {
             name: "Series 1",
-            data: [45, 52, 38, 45, 19, 23, 2]
+            data: [45, 52, 38, 45, 19, 23, 2],
           },
               {
             name: "Series 2",
@@ -75,24 +75,32 @@ document.addEventListener('DOMContentLoaded', ()=> {
         ],
         fill: {
           type: "gradient",
+          colors: ['#fff', '#fff'],
           gradient: {
             shadeIntensity: 1,
-            opacityFrom: 0.7,
-            opacityTo: 0.9,
+            opacityFrom:0,
+            opacityTo: 0,
             stops: [0, 90, 100]
           }
         },
+        markers: {
+          colors: ['#432f8a', '#ECE9F1']
+        },
+        stroke: {
+          colors: ['#432f8a', '#ECE9F1']
+        },
         xaxis: {
           categories: [
-            "01 Jan",
-            "02 Jan",
-            "03 Jan",
-            "04 Jan",
-            "05 Jan",
-            "06 Jan",
-            "07 Jan"
+            "1",
+            "5",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30"
           ]
         },
+        
         responsive: [{
           breakpoint: 500,
           options: {
