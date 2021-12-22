@@ -1,0 +1,25 @@
+.ept {
+    width: 25%;
+}
+
+@media(max-width: 2000px) {
+
+    .ept {
+        width: 20%;
+		min-width: 400px;
+    }
+}
+
+@media (max-width: 1800px) {
+	.ept {
+		min-width: 340px;
+		
+	}
+}
+
+@media (max-width: 1275px) {
+    .ept {
+        width: 0;
+        min-width: unset;
+    }
+}

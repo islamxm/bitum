@@ -10,6 +10,8 @@
 				height: 140px;
 				background-color: #ccc;
 
+				flex: 0 0 auto;
+
 			}
 
 			.descr {
@@ -150,8 +152,8 @@
 				flex-direction: column;
 
 				.img {
-					width: 100%;
-					max-width: 300px;
+					// width: 100%;
+					// max-width: 300px;
 					margin-right: 0;
 					margin-bottom: 5px;
 				}
@@ -168,8 +170,8 @@
 						.img {
 							margin-right: 0;
 							margin-bottom: 5px;
-							width: 100% !important;
-							max-width: 300px;
+							// width: 100% !important;
+							// max-width: 300px;
 						}
 					}
 				}

@@ -18,6 +18,9 @@
 @import './blocks/aside.scss';
 @import './blocks/content.scss';
 @import './blocks/help.scss';
+@import './blocks/ept.scss';
+@import './blocks/ticket.scss';
+@import './blocks/popup-item.scss';
 
 
 /*PAGES*/
@@ -25,6 +28,14 @@
 @import './pages/lk-vykup.scss';
 @import './pages/lk-doc.scss';
 @import './pages/lk-prof.scss';
+@import './pages/lk-new-k.scss';
+@import './pages/lk-buyed.scss';
+@import './pages/lk-chart.scss';
+@import './pages/lk-users.scss';
+@import './pages/lk-newdoc.scss';
+@import './pages/lk-ticket.scss';
+@import './pages/lk-auth.scss';
+@import './pages/lk-users-item.scss';
 
 
 /*COMPONENTS*/

@@ -1,0 +1,129 @@
+.users {
+
+    &__table {
+        width: 100%;
+        border-spacing: 0;
+
+        &_head {
+            
+            th {
+                padding: 12px 12px;
+                padding-bottom: 50px;
+                color: var(--light_blue);
+                font-weight: 700;
+                text-align: center;
+                border-right: 2px solid #000;
+            }
+        }
+
+        &_row {
+            td {
+                border-right: 2px solid #000;
+                padding: 12px 12px;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: var(--light_blue);
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 1275px) {
+
+    .users {
+        padding-left: 130px;
+        &__table {
+
+
+            &_head {
+
+
+                th {
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .users {
+
+        &__table {
+            font-size: 25px;
+            line-height: 30px;
+
+            tr {
+
+                td {
+                    &:hover {
+
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+    .users {
+
+        &__table {
+            font-size: 20px;
+            line-height: 22px;
+
+            &_head {
+                th {
+                    padding-bottom: 20px;
+                }
+            }
+
+
+
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .users {
+
+        &__table_wr {
+
+        }
+        &__table {
+
+
+
+            &_head {
+                display: none !important;
+            }
+            tr {
+                border-bottom: 2px solid var(--light_blue);
+                td {
+                    border: none;
+                    
+                }
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .users {
+        padding-left: 60px;
+    }
+}

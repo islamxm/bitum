@@ -4,7 +4,7 @@
 	padding: 20px;
 	bottom: 46px;
 	right: 70px;
-	width: 106;
+	// width: 106px;
 	border-radius: 100%;
 	justify-self: 106px;
 	background-color: var(--dark_blue);
@@ -24,4 +24,10 @@
 		align-items: center;
 	}
 
+}
+@media (max-width: 500px) {
+
+	.help {
+		padding: 10px;
+	}
 }

@@ -1,0 +1,152 @@
+.buyed {
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        margin-bottom: 100px;
+
+        &_item {    
+            max-width: 200px;
+            width: 100%;
+            .img {
+                width: 177px;
+                height: 177px;
+                background-color: #ccc;
+                margin-bottom: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .descr {
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__content {
+
+        &_title {
+            margin-bottom: 23px;
+        }
+
+        &_subtitle {
+            margin-bottom: 50px;
+            font-size: 35px;
+            line-height: 40px;
+            font-weight: 500;
+        }
+
+        &_list {
+
+            &_item {
+                display: flex;
+                max-width: 700px;
+                width: 100%;
+                margin-bottom: 30px;
+
+                .img {
+                    width: 177px;
+                    height: 177px;
+                    background-color: #ccc;
+                    margin-right: 30px;
+                    flex: 0 0 auto;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .descr {
+                    font-size: 24px;
+                    line-height: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1750px) {
+    .buyed {
+
+        &__list {
+
+        }
+    }
+}
+
+@media (max-width: 1275px) {
+
+    .buyed {
+        padding-left: 130px;
+        &__list {
+
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .buyed {
+
+        &__list {
+
+        }
+
+        &__content {
+
+            &_subtitle {
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .buyed {
+
+        &__list {
+            gap: 20px;
+        }
+
+        &__content {
+
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .buyed {
+        
+
+        &__content {
+
+            &_list {
+
+                &_item {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .buyed {
+        padding-left: 60px;
+    }
+}
