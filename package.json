@@ -38,7 +38,7 @@
     ">1%"
   ],
   "dependencies": {
-    "apexcharts": "^3.32.0",
+    "apexcharts": "^3.32.1",
     "chart.js": "^3.6.2",
     "micromodal": "^0.4.10",
     "nouislider": "^15.5.0"

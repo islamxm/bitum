@@ -41,56 +41,58 @@
 
 	&__main {
 
-		.table {
-			width: 100%;
-			border-spacing: 0;
-			&_head {
+			&_tabs {
+				display: flex;
+				justify-content: space-between;
 				background-color: var(--light_blue);
-				color: #fff;
+				margin-bottom: 40px;
 
-				th {
-					text-align: left;
-					padding: 18px 5px;
+				.doc__tab {
+					color: #fff;
+					font-weight: 600;
+					cursor: pointer;
+					padding: 18px 30px;
 				}
 			}
 
-			td {
-				padding: 18px 5px;
-				font-size: 30px;
-				vertical-align: top;
-							line-height: 40px;
-							font-weight: 500;
-				
-					.t__item {
+			&_contents {
+
+				.doc__content {
+
+					&_item {
 						display: flex;
+						margin-bottom: 30px;
+
 						.img {
-							margin-right: 10px;
-							width: 140px !important;
-							height: 140px !important;
+							width: 140px;
+							height: 140px;
 							background-color: #ccc;
+							margin-right: 20px;
+							flex: 0 0 auto;
 						}
 
 						.descr {
+							display: flex;
+							flex-direction: column;
+							justify-content: space-between;
 							font-size: 30px;
-							line-height: 40px;
-							font-weight: 500;
-							.btn {
-								font-weight: 500;
-								display: block;
-								margin-bottom: 20px;
-
-								@include ease-03;
-
-					&:hover {
-						color: var(--light_blue);
-						text-decoration: underline;
-					}
+							line-height: 35px;
+							&__top {
+								display: flex;
+								&_left {
+									margin-right: 40px;
+								}
 							}
+
+							&__btn {
+								a {
+									text-decoration: underline;
+								}
+							}	
 						}
 					}
-				
+				}
 			}
-		}
 	}
 }
 
@@ -112,20 +114,11 @@
 
 		&__main {
 
-			.table {
+			&_contents {
 
-				&_head {
-					font-size: 20px;
-					line-height: 25px;
-				}
+				.doc__content {
 
-				tr {
-					td {
-						font-size: 20px !important;
-						line-height: 25px !important;
-					}
-
-					.t__item {
+					&_item {
 
 						.descr {
 							font-size: 20px;
@@ -134,6 +127,7 @@
 					}
 				}
 			}
+			
 		}
 	}
 }
@@ -161,26 +155,30 @@
 		}
 		&__main {
 
-			.table {
+			&_tabs {
+				flex-wrap: wrap;
+				background-color: #fff;
+				.doc__tab {
+					background-color: var(--light_blue);
+					width: 100%;
+					margin-bottom: 20px;
+				}
+			}
+			&_contents {
 
-				tr {
-					.t__item {
-						flex-direction: column;
+				.doc__content {
 
-						.img {
-							margin-right: 0;
-							margin-bottom: 5px;
-							// width: 100% !important;
-							// max-width: 300px;
-						}
+					&_item {
+
 					}
 				}
 			}
+			
 		}
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
 	.doc {
 
@@ -190,21 +188,50 @@
 
 		&__main {
 
-			.table {
+			&_contents {
 
-				tr {
-					display: block;
+				.doc__content {
+					.img {
+						margin-bottom: 10px;
+					}
+					.descr {
 
-					td {
-						display: flex;
-						justify-content: space-between;
+						&__top {
+							flex-direction: column;
+
+							.item {
+								margin-bottom: 10px;
+							}
+						}
 					}
 				}
-				&_head {
-					display: none !important;
-					font-size: 16px;
-					line-height: 18px;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 400px) {
+
+	.doc {
+
+		&__main {
+			&_tabs {
+
+				.doc__tab {
+					font-size: 20px;
+					line-height: 25px;
 				}
+			}
+			&_contents {
+
+				.doc__content {
+
+					&_item {
+						flex-direction: column;
+					}
+				}
+
 			}
 		}
 	}

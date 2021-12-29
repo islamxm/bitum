@@ -51,6 +51,54 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
 
 
+    function tabsFunc() {
+        const tabsParent = document.querySelector('.doc__main_tabs');
+        const tabs = document.querySelectorAll('.doc__tab');
+        const tabsContents = document.querySelectorAll('.doc__content');
+
+        function hideTabs() {
+            tabsContents.forEach(item => {
+                item.style.display = 'none';
+            });
+            tabs.forEach(item => {
+                item.style.color = '#fff';
+            })
+        }
+
+        function showTabs(ind = 0) {
+            tabsContents[ind].style.display = 'block';
+            tabs[ind].style.color = 'red';
+        }
+
+
+        hideTabs();
+
+        showTabs();
+
+
+        tabsParent.addEventListener('click', (e)=> {
+            let target = e.target;
+
+            if(target && target.classList.contains('doc__tab')) {
+                tabs.forEach((i, index) => {
+                    if(target == i) {
+                        hideTabs();
+                        showTabs(index);
+                    }
+                })
+            }
+        })
+
+
+    }
+
+    const tabtog = document.querySelector('.doc__main_tabs');
+
+    if(tabtog) {
+        tabsFunc(); 
+    }
+
+    
     burgerMenu();
     asideMenu();
 
